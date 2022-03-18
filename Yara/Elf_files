@@ -1,0 +1,71 @@
+
+import "elf"
+
+
+rule single_section{
+
+
+	condition:
+		elf.number_of_sections == 1
+}
+
+rule elf_64
+{
+
+	condition:
+
+		elf.machine == elf.EM_X86_64
+}
+rule elf_386
+{
+	condition:
+		elf.machine == elf.EM_386
+}
+
+elf_386 ./files//cOnFOSOUzn
+elf_64 ./files//alsAsL9o9w
+elf_64 ./files//XZYMNkkZTy
+elf_386 ./files//Gilly
+elf_386 ./files//iWZ86bsQcX
+elf_64 ./files//JeCy0w33yV
+elf_386 ./files//rS91mPBmSb
+elf_64 ./files//w1mU5LjWfy
+elf_386 ./files//Douglas
+elf_386 ./files//Uw1FAaXmah
+elf_386 ./files//SZmb2gupwt
+elf_386 ./files//Lower_West_Side
+elf_64 ./files//mQligTgF5o
+elf_386 ./files//Fvs1ek0qlg
+elf_386 ./files//ePmcqgomRz
+elf_64 ./files//TWCKywkesQ
+elf_386 ./files//3JlJzdv5fY
+elf_386 ./files//nt0Cs0rtKV
+elf_386 ./files//West_Pullman
+elf_64 ./files//Viserys_Targaryen
+elf_386 ./files//oHmoZQUq1X
+elf_386 ./files//DuRk7JSjcU
+elf_386 ./files//PHbpHRNmEM
+elf_386 ./files//Norwood_Park
+elf_64 ./files//North_Lawndale
+elf_64 ./files//Albany_Park
+
+
+rule get_links
+{
+	strings:
+		$r1 = "GET /%s%s HTTP/1.1"
+		$r2 = "GET /help HTTP/1.1"
+		$r3 = "GET /ip.txt HTTP/1.1"
+		$r4 = "GET /fun HTTP/1.1"
+		$r5 = "GET /zefrda HTTP/1.1"
+		$r6 = "GET /1234 HTTP/1.1"
+	condition:
+		$r1 or $r2 or $r3 or $r4 or $r5 or $r6
+}
+
+
+
+
+
+
+get_links ./files//Washington_Park

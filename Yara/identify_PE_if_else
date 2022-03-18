@@ -1,0 +1,28 @@
+/// identifies a PE file that has two sections: “re4fun” & “malwies”
+import "pe"
+
+
+
+rule pe_match2sections
+{
+	meta:
+		description = ""
+		author = ""
+
+	strings:
+		$pe1 = { 72 65 34 66 75 6E } 
+		$pe2 = { 6D 61 6C 77 69 65 73 } 
+
+	condition:
+		$pe1 and $pe2 and pe.is_pe
+}
+
+
+
+
+
+pe_match2sections ./files//qDf56ShlTn
+pe_match2sections ./files//qmLXdbaeSW
+pe_match2sections ./files//qilY3pbNME
+
+

@@ -1,0 +1,83 @@
+rule generic_pdf_files
+{
+	meta:
+		author = ""
+		decription = ""
+	strings:
+		$pdf_header = { 25 50 44 46 2D ?? 2E ?? }
+	condition:
+		$pdf_header in (0..1024)
+}
+
+
+
+pdf files found 
+
+generic_pdf_files ./files//ef5161
+generic_pdf_files ./files//bc6081
+generic_pdf_files ./files//09f2fd
+generic_pdf_files ./files//f87582
+generic_pdf_files ./files//686138
+generic_pdf_files ./files//ATFreRsHWo
+generic_pdf_files ./files//829928
+generic_pdf_files ./files//58654e
+generic_pdf_files ./files//rAAi7ItoSU
+generic_pdf_files ./files//bZoOYCwacW
+generic_pdf_files ./files//6ZH4AYYQQa
+generic_pdf_files ./files//p7Gc0w1SbU
+generic_pdf_files ./files//TtDkzf3lgv
+generic_pdf_files ./files//QBmN2Vf3Wu
+generic_pdf_files ./files//a8eded
+generic_pdf_files ./files//b43683
+generic_pdf_files ./files//ashketchum
+generic_pdf_files ./files//d20039
+generic_pdf_files ./files//V6B0c8J0fR
+generic_pdf_files ./files//IbcGg9MnnI
+generic_pdf_files ./files//VguVSE8Kik
+generic_pdf_files ./files//VUZLJdtbzD
+generic_pdf_files ./files//80c13e
+generic_pdf_files ./files//0e8a50
+generic_pdf_files ./files//gjAyMMTJDs
+generic_pdf_files ./files//1ad3cb
+generic_pdf_files ./files//1NUeiMCt86
+generic_pdf_files ./files//ddb3be
+generic_pdf_files ./files//West_Town
+generic_pdf_files ./files//0ZlB1riKOj
+generic_pdf_files ./files//CRDdHG0yZQ
+generic_pdf_files ./files//012bc5
+generic_pdf_files ./files//545fb7
+generic_pdf_files ./files//wuhLn2ZeT9
+generic_pdf_files ./files//b10ba6
+generic_pdf_files ./files//3b9362
+generic_pdf_files ./files//PyA93V9UFS
+generic_pdf_files ./files//J8jGNkx1nA
+generic_pdf_files ./files//2eb394
+generic_pdf_files ./files//457c00
+generic_pdf_files ./files//Brienne_of_Tarth
+generic_pdf_files ./files//cdvsHtJqWu
+generic_pdf_files ./files//8a6a3c
+generic_pdf_files ./files//v7PAaVm24r
+generic_pdf_files ./files//1hlfNZI1o3
+generic_pdf_files ./files//Stannis_Baratheon
+generic_pdf_files ./files//yDV6qZyf9Q
+generic_pdf_files ./files//C8xUtvGk8W
+generic_pdf_files ./files//Eddard_Ned_Stark
+generic_pdf_files ./files//IpJGCQTBh3
+generic_pdf_files ./files//wgiXpHYwMC
+generic_pdf_files ./files//a25e6a
+generic_pdf_files ./files//UqM623Y9GD
+generic_pdf_files ./files//Rogers_Park
+generic_pdf_files ./files//0fb5a4
+generic_pdf_files ./files//RARsDMcwBQ
+generic_pdf_files ./files//West_Englewood
+generic_pdf_files ./files//xXTd1th62n
+generic_pdf_files ./files//06c42b
+generic_pdf_files ./files//9rE6KWM2jS
+generic_pdf_files ./files//P17J1sv35f
+generic_pdf_files ./files//K6qzfSZnGu
+generic_pdf_files ./files//FPoCDvOEbH
+generic_pdf_files ./files//17d9a4
+generic_pdf_files ./files//53aHzITdzJ
+
+
+

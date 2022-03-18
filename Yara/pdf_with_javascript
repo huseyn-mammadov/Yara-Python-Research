@@ -1,0 +1,37 @@
+
+rule pdf_js
+{
+	meta:
+		description = ""
+		author = ""
+
+	strings:
+		$pdf1 = "/JS"
+		$pdf2 = "/JavaScript"
+
+	condition:
+		$pdf1 and $pdf2 and generic_pdf_files
+}
+
+pdf_js ./files//ef5161
+pdf_js ./files//f87582
+pdf_js ./files//09f2fd
+pdf_js ./files//686138
+pdf_js ./files//bc6081
+pdf_js ./files//58654e
+pdf_js ./files//829928
+pdf_js ./files//b43683
+pdf_js ./files//0e8a50
+pdf_js ./files//ashketchum
+pdf_js ./files//d20039
+pdf_js ./files//a8eded
+pdf_js ./files//012bc5
+pdf_js ./files//b10ba6
+pdf_js ./files//3b9362
+pdf_js ./files//2eb394
+pdf_js ./files//457c00
+pdf_js ./files//a25e6a
+pdf_js ./files//17d9a4
+pdf_js ./files//0fb5a4
+pdf_js ./files//06c42b
+

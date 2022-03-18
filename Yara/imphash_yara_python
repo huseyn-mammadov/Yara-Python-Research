@@ -1,0 +1,25 @@
+
+
+
+rule pe_imphash
+{
+	meta:
+		description = ""
+		author = ""
+
+	
+		
+		
+
+	condition:
+		generic_pe_files and pe.imphash() == "de5490f8d3fb044d081bdaec5ef47bf7"
+
+}
+
+
+
+pe_imphash ./files//Jigglypuff
+
+
+
+
